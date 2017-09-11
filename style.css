@@ -48,3 +48,237 @@ html body {
   width: 6vw;
   height: 6vw;
 }
+
+/* -------------------------------- */
+/* ----------- astronaut ---------- */
+/* -------------------------------- */
+.helmet,
+.body-top,
+.arm-right,
+.hand-right,
+.body-bottom,
+.body-bottom::after,
+.arm-left,
+.arm-left::after,
+.hand-left,
+.foot-left,
+.foot-right,
+.controls,
+.controls::before,
+.controls::after,
+.flag,
+.flag::before,
+.flag::after
+{
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 400px;
+  width: 400px;
+  background-color: transparent;
+}
+
+.helmet {
+  top: -8px;
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  z-index: 100;
+}
+
+.visor {
+  position: absolute;
+  top: 17px;
+  left: 6px;
+  height: 35px;
+  width: 45px;
+  border-radius: 35% 35% 90% 90%;
+  border: 2px solid white;
+  z-index: 100;
+  background-color: #00B7FF;
+  box-shadow: inset 4px 2px 2px #007EFE;
+}
+
+.body-top {
+  z-index: 50;
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  top: 75px;
+  border-radius: 60% 60% 0 0;
+  border: 2px solid white;
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+.arm-right {
+  border: 2px solid white;
+  border-top: 2px solid transparent;
+  width: 10px;
+  height: 25px;
+  left: 50px;
+  top: 119px;
+  z-index: 2;
+}
+
+.hand-right {
+  border: 2px solid white;
+  width: 6px;
+  height: 7px;
+  left: 46px;
+  top: 156px;
+  border-radius: 0 0 70% 0;
+  z-index: 1;
+}
+
+.body-bottom {
+  border: 2px solid white;
+  border-top: 0 solid transparent;
+  width: 39px;
+  left: -3px;
+  height: 82px;
+  top: 155px;
+}
+
+.body-bottom::after {
+  content: '';
+  position: absolute;
+  height: 25px;
+  width: 2px;
+  top: 45px;
+  background-color: white;
+  z-index: 101;
+}
+
+.arm-left {
+  border-radius: 0 5px 20px 0;
+  height: 11px;
+  width: 30px;
+  border: 2px solid white;
+  border-right: 2px solid transparent;
+  z-index: 99;
+  top: 70px;
+  left: -70px;
+  transform: rotate(-31deg);
+  transform-origin: right;
+  animation: wave-arm 2s linear infinite;
+}
+
+.hand-left {
+  border: 2px solid white;
+  height: 7px;
+  width: 4px;
+  left: -102px;
+  top: 105px;
+  border-radius: 90px 50% 50% 90px;
+  transform: rotate(-31deg);
+  z-index: 2;
+  animation: wave-hand 2s linear infinite;
+}
+
+.foot-left {
+  border: 2px solid white;
+  height: 10px;
+  width: 17px;
+  top: 220px;
+  border-radius: 50% 50% 0 0;
+  left: -25px;
+}
+
+.foot-right {
+  border: 2px solid white;
+  height: 10px;
+  width: 17px;
+  top: 220px;
+  border-radius: 50% 50% 0 0;
+  left: 18px;
+}
+
+.controls {
+  height: 22px;
+  width: 18px;
+  border: 2px solid white;
+  top: 110px;
+  left: -2px;
+  z-index: 100;
+}
+
+.controls::before {
+  content: '';
+  width: 12px;
+  height: 1px;
+  top: -12px;
+  z-index: 115;
+  background-color: white;
+  box-shadow: 0 4px 0 0 white,
+  0 8px 0 0 white
+}
+
+.controls::after {
+  content: '';
+  width: 4px;
+  height: 4px;
+  top: 14px;
+  z-index: 115;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.flag {
+  height: 70px;
+  width: 2px;
+  background-color: white;
+  left: -125px;
+  top: 60px;
+  transform: rotate(-31deg);
+  z-index: 0;
+  transform-origin: right;
+  animation: wave-flag 2s linear infinite;
+}
+
+.flag::before {
+  content: '';
+  height: 40px;
+  width: 70px;
+  top: -100px;
+  left: -73px;
+  border: 2px solid white;
+  background-color: #F15A24;
+}
+
+.flag::after {
+  content: 'launching soon!';
+  color: white;
+  font-weight: 100;
+  top: -100px;
+  left: -75px;
+  width: 60px;
+  height: 40px;
+}
+
+@keyframes wave-arm {
+  50% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes wave-flag {
+  50% {
+    left: -110px;
+    top: 30px;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes wave-hand {
+  50% {
+    left: -110px;
+    top: 72px;
+    transform: rotate(0deg);
+  }
+}
