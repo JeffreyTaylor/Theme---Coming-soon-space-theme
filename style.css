@@ -1,10 +1,12 @@
 html {
   height: 100%;
 }
+
 html body {
   width: 100%;
   height: 100%;
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #container {
@@ -14,6 +16,86 @@ html body {
   height: 100%;
   background: radial-gradient(at bottom right, #1B2735 0%, #090A0F 100%);
 }
+
+#contact-form {
+  width: 50%;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.email-input {
+  display: table-cell;
+  background: rgba(255, 255, 255, 0.09);
+  border: 2px solid white;
+  color: white;
+  float: left;
+  padding: 9px;
+  text-indent: 10px;
+  font-size: 26px;
+}
+
+.email-submit {
+  display: table-cell;
+  background: rgba(255, 255, 255, 0.09);
+  padding: 9px 12px 9px 12px;
+  border: 2px dashed white;
+  color: white;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0 14px 14px 0;
+  font-size: 26px;
+}
+
+.email-input:focus,
+.email-submit:focus {
+  outline: none;
+}
+
+.email-submit:active {
+  border: 2px solid white;
+}
+
+.invalid {
+  border: 2px solid red;
+  animation: shake 0.2s infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.valid {
+  border: 2px solid green;
+}
+
+.rocket {
+  font-size: 26px;
+  position: absolute;
+  color:white;
+}
+
+.take-off {
+  animation: takeoff 2.5s normal forwards;
+}
+
+@keyframes takeoff {
+  100% {
+    left: 100%;
+    top: 0
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  50% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/* -------------------------------- */
+/* ------------ moon -------------- */
+/* -------------------------------- */
 
 .moon {
   height: 30vw;
@@ -28,7 +110,7 @@ html body {
 }
 
 .moon::before {
-  content:'';
+  content: '';
   border-radius: 50%;
   background-color: #737277;
   position: absolute;
@@ -39,7 +121,7 @@ html body {
 }
 
 .moon::after {
-  content:'';
+  content: '';
   border-radius: 50%;
   background-color: #737277;
   position: absolute;
@@ -52,6 +134,17 @@ html body {
 /* -------------------------------- */
 /* ----------- astronaut ---------- */
 /* -------------------------------- */
+
+.astronaut-container {
+  position: absolute;
+  height: 250px;
+  width: 100px;
+  background-color: transparent;
+  left: 75%;
+  bottom: 50%;
+  animation: float 4s ease-in-out infinite;
+}
+
 .helmet,
 .body-top,
 .arm-right,
@@ -68,8 +161,7 @@ html body {
 .controls::after,
 .flag,
 .flag::before,
-.flag::after
-{
+.flag::after {
   position: absolute;
   margin: auto;
   left: 0;
@@ -79,19 +171,13 @@ html body {
   background-color: transparent;
 }
 
-.container {
-  position: absolute;
-  height: 250px;
-  width: 100px;
-  background-color: transparent;
-  left: 75%;
-  bottom: 50%;
-  animation:float 4s ease-in-out infinite;
-}
-
 @keyframes float {
-  0%,100%{ transform:translateY(0) rotate(-4deg); }
-  50%{ transform:translateY(-15px) rotate(4deg); }
+  0%, 100% {
+    transform: translateY(0) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(4deg);
+  }
 }
 
 .helmet {
@@ -268,7 +354,9 @@ html body {
   content: 'launching soon!';
   color: white;
   font-weight: 100;
-  top: -100px;
+  font-size: 0.8em;
+  text-align: center;
+  top: -90px;
   left: -75px;
   width: 60px;
   height: 40px;
@@ -294,4 +382,49 @@ html body {
     top: 90px;
     transform: rotate(-15deg);
   }
+}
+
+/* ----------------------------------------- */
+/* ------------ media queries -------------- */
+/* ----------------------------------------- */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .email-input,
+  .email-submit {
+    font-size: 18px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+
+  #contact-form {
+    width: 70%;
+  }
+
+  .email-input,
+  .email-submit,
+  .rocket {
+    font-size: 14px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .email-input,
+  .email-submit
+  .rocket {
+    font-size: 12px;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+
 }
