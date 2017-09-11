@@ -14,3 +14,37 @@ html body {
   height: 100%;
   background: radial-gradient(at bottom right, #1B2735 0%, #090A0F 100%);
 }
+
+.moon {
+  height: 30vw;
+  width: 30vw;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #9E9E9E;
+  border-left: 4px solid #737277;
+  border-top: 4px solid #737277;
+}
+
+.moon::before {
+  content:'';
+  border-radius: 50%;
+  background-color: #737277;
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  width: 8vw;
+  height: 8vw;
+}
+
+.moon::after {
+  content:'';
+  border-radius: 50%;
+  background-color: #737277;
+  position: absolute;
+  top: 72%;
+  left: 30%;
+  width: 6vw;
+  height: 6vw;
+}
