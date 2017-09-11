@@ -76,9 +76,22 @@ html body {
   right: 0;
   top: 0;
   bottom: 0;
-  height: 400px;
-  width: 400px;
   background-color: transparent;
+}
+
+.container {
+  position: absolute;
+  height: 250px;
+  width: 100px;
+  background-color: transparent;
+  left: 75%;
+  bottom: 50%;
+  animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,100%{ transform:translateY(0) rotate(-4deg); }
+  50%{ transform:translateY(-15px) rotate(4deg); }
 }
 
 .helmet {
@@ -263,22 +276,22 @@ html body {
 
 @keyframes wave-arm {
   50% {
-    transform: rotate(0deg);
+    transform: rotate(-15deg);
   }
 }
 
 @keyframes wave-flag {
   50% {
-    left: -110px;
+    left: -120px;
     top: 30px;
-    transform: rotate(0deg);
+    transform: rotate(-15deg);
   }
 }
 
 @keyframes wave-hand {
   50% {
-    left: -110px;
-    top: 72px;
-    transform: rotate(0deg);
+    left: -107px;
+    top: 90px;
+    transform: rotate(-15deg);
   }
 }

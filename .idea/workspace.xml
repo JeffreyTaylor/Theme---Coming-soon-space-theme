@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="835eeca8-5f45-4abd-a62d-9addccfe21b4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -31,10 +30,10 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="681">
-              <caret line="240" column="24" lean-forward="false" selection-start-line="240" selection-start-column="24" selection-end-line="240" selection-end-column="24" />
+            <state relative-caret-position="517">
+              <caret line="87" column="12" lean-forward="false" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
               <folding>
-                <marker date="1505158145000" expanded="true" signature="4387:4404" ph="..." />
+                <marker date="1505158803000" expanded="true" signature="4658:4675" ph="..." />
               </folding>
             </state>
           </provider>
@@ -246,12 +245,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1505136523701</updated>
-      <workItem from="1505136526433" duration="8668000" />
+      <workItem from="1505136526433" duration="9336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8668000" />
+    <option name="totallyTimeSpent" value="9336000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -384,10 +383,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="240" column="24" lean-forward="false" selection-start-line="240" selection-start-column="24" selection-end-line="240" selection-end-column="24" />
+        <state relative-caret-position="517">
+          <caret line="87" column="12" lean-forward="false" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
           <folding>
-            <marker date="1505158145000" expanded="true" signature="4387:4404" ph="..." />
+            <marker date="1505158803000" expanded="true" signature="4658:4675" ph="..." />
           </folding>
         </state>
       </provider>
