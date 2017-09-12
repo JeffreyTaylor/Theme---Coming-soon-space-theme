@@ -5,7 +5,7 @@ $(document).ready(function () {
 });
 
 function loadParticles() {
-  particlesJS("container", {
+  particlesJS("background", {
     "particles": {
       "number": {
         "value": 355
@@ -142,8 +142,15 @@ function isValidEmail(email) {
 }
 
 function setupAstronautDrag() {
+
+  var revertDuration = 2500;
+
   $(".astronaut-container").draggable({
     revert: true,
-    revertDuration: 2500
+    revertDuration: revertDuration
+  });
+
+  $(window).on('resize', function () {
+    $(".astronaut-container").removeAttr('style');
   });
 }

@@ -9,20 +9,27 @@ html body {
   font-family: 'Montserrat', sans-serif;
 }
 
-#logo {
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  z-index: 9999;
-}
+/* === BACKGROUND === */
 
-#container {
+#background {
   display: block;
   position: absolute;
   width: 100%;
   height: 100%;
   background: radial-gradient(at bottom right, #1B2735 0%, #090A0F 100%);
 }
+
+/* === LOGO === */
+
+#logo {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 9999;
+  /* If you'd like to change the image of the logo, please do so in index.html */
+}
+
+/* === CONTACT FORM === */
 
 #contact-form {
   width: 50%;
@@ -100,9 +107,7 @@ html body {
   }
 }
 
-/* -------------------------------- */
-/* ------------ moon -------------- */
-/* -------------------------------- */
+/* === MOON === */
 
 .moon {
   height: 30vw;
@@ -138,9 +143,7 @@ html body {
   height: 6vw;
 }
 
-/* -------------------------------- */
-/* ----------- astronaut ---------- */
-/* -------------------------------- */
+/* === ASTRONAUT === */
 
 .astronaut-container {
   position: absolute;
@@ -392,9 +395,7 @@ html body {
   }
 }
 
-/* ----------------------------------------- */
-/* ------------ media queries -------------- */
-/* ----------------------------------------- */
+/* === MEDIA QUERIES === */
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -426,9 +427,22 @@ html body {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .email-input,
-  .email-submit
+  .email-submit,
   .rocket {
     font-size: 12px;
+  }
+
+  #logo {
+    width: 250px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .astronaut-container {
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 }
 
