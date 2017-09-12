@@ -1,6 +1,7 @@
 $(document).ready(function () {
   loadParticles();
-  setupEmailValidation()
+  setupEmailValidation();
+  setupAstronautDrag();
 });
 
 function loadParticles() {
@@ -138,4 +139,11 @@ function setupEmailValidation() {
 function isValidEmail(email) {
   var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(email);
+}
+
+function setupAstronautDrag() {
+  $(".astronaut-container").draggable({
+    revert: true,
+    revertDuration: 2500
+  });
 }

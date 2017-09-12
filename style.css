@@ -9,6 +9,13 @@ html body {
   font-family: 'Montserrat', sans-serif;
 }
 
+#logo {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 9999;
+}
+
 #container {
   display: block;
   position: absolute;
@@ -143,6 +150,7 @@ html body {
   left: 75%;
   bottom: 50%;
   animation: float 4s ease-in-out infinite;
+  cursor: all-scroll;
 }
 
 .helmet,
