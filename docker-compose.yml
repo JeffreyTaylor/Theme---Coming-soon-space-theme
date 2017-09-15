@@ -1,0 +1,7 @@
+app:
+#  image: 583596724874.dkr.ecr.us-east-2.amazonaws.com/swipe-queen:v1
+  build: .
+  ports:
+    - "8000:8000"
+  volumes:
+    - .:/home/dev

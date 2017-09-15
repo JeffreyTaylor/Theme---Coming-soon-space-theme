@@ -1,0 +1,30 @@
+{
+  "apiVersion": "extensions/v1beta1",
+  "kind": "Deployment",
+  "metadata": {
+    "name": "brightside-deployment"
+  },
+  "spec": {
+    "replicas": 1,
+    "template": {
+      "metadata": {
+        "labels": {
+          "app": "brightside-webapp"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "webapp",
+            "image": "583596724874.dkr.ecr.us-east-2.amazonaws.com/brightsidestudio:v1",
+            "ports": [
+              {
+                "containerPort": 8000
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
