@@ -10,7 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "hapi": "^16.6.0",
-    "inert": "^4.2.1"
+    "hapi": "16.6.0",
+    "inert": "4.2.1"
+  },
+  "devDependencies": {
+    "del": "3.0.0",
+    "gulp": "3.9.1",
+    "gulp-zip": "4.0.0",
+    "run-sequence": "2.1.0"
   }
 }
