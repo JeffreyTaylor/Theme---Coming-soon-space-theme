@@ -2,7 +2,7 @@
   "kind": "Service",
   "apiVersion": "v1",
   "metadata": {
-    "name": "brightside-webapp-loadbalancer"
+    "name": "space-theme-loadbalancer"
   },
   "spec": {
     "ports": [
@@ -13,7 +13,7 @@
       }
     ],
     "selector": {
-      "app": "brightside-webapp"
+      "app": "space-theme-webapp"
     },
     "type": "LoadBalancer"
   }

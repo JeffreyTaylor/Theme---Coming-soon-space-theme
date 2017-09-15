@@ -2,21 +2,21 @@
   "apiVersion": "extensions/v1beta1",
   "kind": "Deployment",
   "metadata": {
-    "name": "brightside-deployment"
+    "name": "space-theme-deployment"
   },
   "spec": {
     "replicas": 1,
     "template": {
       "metadata": {
         "labels": {
-          "app": "brightside-webapp"
+          "app": "space-theme-webapp"
         }
       },
       "spec": {
         "containers": [
           {
             "name": "webapp",
-            "image": "583596724874.dkr.ecr.us-east-2.amazonaws.com/brightsidestudio:v1",
+            "image": "583596724874.dkr.ecr.us-east-2.amazonaws.com/theme/space:v2",
             "ports": [
               {
                 "containerPort": 8000

@@ -3,5 +3,3 @@ app:
   build: .
   ports:
     - "8000:8000"
-  volumes:
-    - .:/home/dev

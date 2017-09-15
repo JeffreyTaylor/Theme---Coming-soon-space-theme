@@ -6,8 +6,10 @@ COPY ./src /home/dev/src
 COPY ./server.js /home/dev
 COPY ./package.json /home/dev
 
+WORKDIR /home/dev
+
 RUN npm install --production --silent
 
-CMD ["node", "/home/dev/server.js"]
+CMD ["node", "server.js"]
 
 
