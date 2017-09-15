@@ -86,3 +86,4 @@ fe_coverage.html
 # Vim files
 *.swp
 *.swo
+.gitignore
