@@ -6,3 +6,6 @@ Rocket, is a fun, interactive and one of a kind Coming Soon HTML template, built
 - ```node server```
 - navigate to ```localhost:8000``` in your browser
 
+# Preview
+![Preview](marketing/preview.png)
+
